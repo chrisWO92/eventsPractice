@@ -20,11 +20,13 @@
 
 <body>
     <div class="container">
-        <form action="">
+        <form autocomplete="off">
             <h1 class="title">INSCRIPCIÓN MATERIAS</h1>
-            <input type="text" id="student-name" class="student-name" name="student-name" placeholder="Enter your name" autocomplete="off">
-            <input type="text" id="student-email" class="student-email" name="student-email" placeholder="Enter your email" autocomplete="off">
-            <input type="text" id="subject" class="subject" name="subject" placeholder="Enter subject" autocomplete="off">
+            <input type="text" id="student-name" class="student-name" name="student-name" placeholder="Enter your name">
+
+            <!-- Recordar que el input email no está tomando el autocomplete off -->
+            <input type="text" id="student-email" class="student-email" name="student-email" placeholder="Enter your email">
+            <input type="text" id="subject" class="subject" name="subject" placeholder="Enter subject">
             <input type="submit" class="submit" value="Enviar">
         </form>
     </div>
