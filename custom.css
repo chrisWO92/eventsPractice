@@ -1,6 +1,8 @@
 body {
     box-sizing: border-box;
-    background-color: #202224;
+    height: 100vh;
+    background-image: radial-gradient(circle at 30.68% 63.53%, #243c3d 0, #203231 16.67%, #192221 33.33%, #0d0d0d 50%, #000000 66.67%, #000000 83.33%, #000000 100%);
+    overflow: hidden;
 }
 
 .title {
@@ -9,14 +11,15 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-weight: 800;
     color: white;
+    margin: 40px 0px 30px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 50%;
     height: auto;
-    background-color: #4d4f54;
+    background-image: radial-gradient(circle at 43.49% 13.08%, #6696ad 0, #6392a5 6.25%, #618e9b 12.5%, #608891 18.75%, #608286 25%, #607a7b 31.25%, #607171 37.5%, #5f6866 43.75%, #5d5d5d 50%, #5a5355 56.25%, #564950 62.5%, #51414c 68.75%, #4c3a4a 75%, #463548 81.25%, #3f3148 87.5%, #382e48 93.75%, #302c49 100%);
     margin: auto;
     border-radius: 10px;
 }
@@ -25,36 +28,57 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px auto 40px;
+    margin: 30px 5% 40px;
 }
 
 form input[type="text"] {
     height: 30px;
-    margin: 10px auto;
+    margin: 20px auto;
     width: 90%;
-    border-radius: 4px;
+    border-radius: 0px;
     outline: none;
     font-size: 1.1rem;
     border: 0;
-    
+    background-color: transparent;
+    color: white !important;
+    border-bottom: 1px solid white;
+}
+
+form input[type="text"]::placeholder{
+    color: rgb(192, 192, 192);
 }
 
 form input:hover {
     animation: pulse 0.2s linear;  
 }
 
-form .submit {
-    margin: 30px auto 10px auto;
+.submit {
+    margin: 50px auto 20px auto;
     height: 3rem;
     width: 60%;
     cursor: pointer;
     font-size: 1.3rem;
     border-radius: 6px;
     border: 0;
+    letter-spacing: 2px;
 }
 
 form .submit:hover {
     color: white;
     background-color: #82878f;
     transition: all 1s ease;
+}
+
+form input:focus {
+    background-color: transparent;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    /*sirve para que a la hora de seleccionar una opcion guardada no muestre color de fondo y el color de la letra sea parecida a la anterior  */
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px unset; 
+    -webkit-text-fill-color: white;
 }
