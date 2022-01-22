@@ -40,7 +40,7 @@ form input {
     width: 90%;
     border-radius: 0px;
     outline: none;
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     border: 0;
     background-color: transparent;
     color: white !important;
@@ -70,7 +70,7 @@ form input:hover {
 .validation {
     margin: 0px auto auto 29px;
     align-self: flex-start;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     letter-spacing: 0px;
 }
 
@@ -121,6 +121,14 @@ form input[type="text"]:-webkit-autofill:active {
     .submit {
         letter-spacing: 2px;
     }
+
+    form input {
+        font-size: 1rem;
+    }
+
+    .validation {
+        font-size: 0.7rem;
+    }
 }
     
 
@@ -137,6 +145,14 @@ form input[type="text"]:-webkit-autofill:active {
 
     .submit {
         letter-spacing: 2.5px;
+    }
+
+    form input {
+        font-size: 1rem;
+    }
+
+    .validation {
+        font-size: 0.7rem;
     }
 
     form .submit:hover {
