@@ -23,11 +23,15 @@
         <form autocomplete="off">
             <h1 class="title">INSCRIPCIÓN MATERIAS</h1>
             <input type="text" id="student-name" class="student-name" name="student-name" placeholder="Enter your name">
+            <div class="name-validation validation"></div>
 
             <!-- Recordar que el input email no está tomando el autocomplete off -->
             <input type="text" id="student-email" class="student-email" name="student-email" placeholder="Enter your email">
+            <div class="email-validation validation"></div>
             <input type="text" id="subject" class="subject" name="subject" placeholder="Enter subject">
+            <div class="subject-validation validation"></div>
             <input type="submit" class="submit" value="Enviar">
+            <div class="submit-validation validation validation-btn"></div>
         </form>
     </div>
     <script src="/app.js"></script>
