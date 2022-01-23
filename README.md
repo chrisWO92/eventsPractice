@@ -1,10 +1,3 @@
 # eventsPractice
-Solving problems with events in Javascript
 
-Problema A
-
-Hacer un formulario con lo siguiente:
-
-    -Contener nombre, mail y materia adeudada.
-    -Validar mails y nombres
-    -Enviar al servidor de manera pulida
+Form made with HTML and CSS, using flexbox. Validations made with Javascript. Practicing events and manipulation of DOM Elements.
